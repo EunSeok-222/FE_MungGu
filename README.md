@@ -65,14 +65,10 @@ LG U+ 유레카 1기 최종 융합 프로젝트 우수상 수상 <br/><br/>
 
 
 ## 👩‍💻 서비스 소개
-### 개요
-### 주요 기능
-**1. 소셜 로그인**
-- 카카오 소셜 로그인<br>
-  <img src="https://github.com/user-attachments/assets/d2252adf-1129-466d-a8fc-43e70b03be4e" width="300">
-<br>
 
-**2. 마이페이지**
+### 담당 파트
+**1. 마이페이지**
+
   - 회원 정보 CRUD, 내 반려견 목록 조회 및 등록 가능
     
   - 선호 시설과 선호 지역 정보 수정 가능 <br>
@@ -82,11 +78,24 @@ LG U+ 유레카 1기 최종 융합 프로젝트 우수상 수상 <br/><br/>
   <img src="https://github.com/user-attachments/assets/8c896de3-4b03-49bd-9208-0d015aa4df11" width="200">
 <br>
 
-**3. 반려동물 정보 관리**
+**2. 반려동물 정보 관리**
 - 반려동물 프로필 관리 (CRUD) <br>
   <img src="https://github.com/user-attachments/assets/58c1bae1-030b-4914-8f18-671dc7c3ce1e" width="300">
   <img src="https://github.com/user-attachments/assets/9b99baec-89a1-4fbf-8aa6-c0ba26ed1210" width="300">
 <br>
+
+**3. 후기**
+- 장소에 사진, 영상을 포함한 후기를 남길 수 있고, 내가 쓴 후기를 모아 볼 수 있다.
+  <br>
+  
+  <img src="https://github.com/user-attachments/assets/0fbcbd6f-c071-43fc-9153-798fae13bdb7" width="500">
+  <img src="https://github.com/user-attachments/assets/98ad9968-101d-45ea-b40c-a23eadaebe6f" width="500">
+
+<br>
+<br>
+
+### 개요
+## 주요 기능
 
 **4. 검색**
 - 검색어로 검색
@@ -102,21 +111,17 @@ LG U+ 유레카 1기 최종 융합 프로젝트 우수상 수상 <br/><br/>
 
 <br>
 
-**5. 즐겨찾기**
+**5. 소셜 로그인**
+- 카카오 소셜 로그인<br>
+  <img src="https://github.com/user-attachments/assets/d2252adf-1129-466d-a8fc-43e70b03be4e" width="300">
+<br>
+
+**6. 즐겨찾기**
 - 장소에 즐겨찾기를 할 수 있고, 즐겨찾기 한 장소를 모아 볼 수 있다. 
   <br>
   
   <img src="https://github.com/user-attachments/assets/973be577-cf63-47d2-aa46-62c282e25814" width="300">
   <img src="https://github.com/user-attachments/assets/47207dc8-cb6a-49f5-947a-5bf43a68c5cc" width="300">
-
-<br>
-
-**6. 후기**
-- 장소에 사진, 영상을 포함한 후기를 남길 수 있고, 내가 쓴 후기를 모아 볼 수 있다.
-  <br>
-  
-  <img src="https://github.com/user-attachments/assets/0fbcbd6f-c071-43fc-9153-798fae13bdb7" width="500">
-  <img src="https://github.com/user-attachments/assets/98ad9968-101d-45ea-b40c-a23eadaebe6f" width="500">
 
 <br>
 
