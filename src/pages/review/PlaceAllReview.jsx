@@ -16,7 +16,7 @@ const PlaceAllReview = () => {
   const [page, setPage] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
   const [hasNext, setHasNext] = useState(true);
-  const [hasInitialLoad, setHasInitialLoad] = useState(false); // 초기 로딩 완료 여부
+  const [hasInitialLoad, setHasInitialLoad] = useState(false); 
 
   const { ref, inView } = useInView({
     threshold: 0.8,
@@ -37,7 +37,6 @@ const PlaceAllReview = () => {
         const response = await GetPlaceReviews(placeId, pageToFetch);
         setReviews((prevReviews) => [...prevReviews, ...response.reviews]);
         setHasNext(response.hasNext);
-        // console.log('fetchPlaceReviews response: ', response);
       } catch (error) {
         console.error('시설 리뷰 가져오기 실패 :', error);
       } finally {
@@ -47,20 +46,18 @@ const PlaceAllReview = () => {
     [placeId, isLoading],
   );
 
-  // 초기 데이터 로딩
   useEffect(() => {
     const loadInitialData = async () => {
-      if (hasInitialLoad) return; // 초기 로딩이 이미 완료되었으면 중단
+      if (hasInitialLoad) return; 
       if (scrollRef.current && localStorage.getItem('scrollPosition')) {
         scrollRef.current.scrollTop = localStorage.getItem('scrollPosition');
       }
       await fetchPlaceReviews(0);
-      setHasInitialLoad(true); // 초기 로딩 완료 상태로 설정
+      setHasInitialLoad(true);
     };
     loadInitialData();
   }, [fetchPlaceReviews]);
 
-  // Intersection Observer 감지 시 페이지 번호 증가
   const handlePageChange = useCallback(() => {
     if (inView && hasNext && !isLoading) {
       setPage((prevPage) => prevPage + 1);
@@ -73,19 +70,16 @@ const PlaceAllReview = () => {
 
   useEffect(() => {
     if (hasInitialLoad) {
-      // 초기 로딩이 완료된 후에만 Intersection Observer 작동
       throttledPageChange();
     }
   }, [throttledPageChange, hasInitialLoad]);
 
-  // 페이지 번호 변경 시 데이터 로딩
   useEffect(() => {
     if (page > 0) {
       fetchPlaceReviews(page);
     }
   }, [page]);
 
-  // 컴포넌트 언마운트 시 스크롤 위치 저장
   useEffect(() => {
     return () => {
       if (scrollRef.current) {
