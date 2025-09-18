@@ -5,7 +5,7 @@ import useTypeStore from '../../stores/review/useTypeStore';
 import { useInView } from 'react-intersection-observer';
 import AllReviewHeader from '../../components/review/AllReviewHeader';
 import SubHeader from '../../components/common/SubHeader';
-import { throttle } from 'lodash'; // debounce 대신 throttle 사용
+import { throttle } from 'lodash'; 
 import { CircularProgress } from '@mui/material';
 const ReviewCard = lazy(() => import('../../components/review/ReviewCard'));
 
@@ -20,7 +20,7 @@ const PlaceAllReview = () => {
 
   const { ref, inView } = useInView({
     threshold: 0.8,
-    triggerOnce: false, // 변경: 스크롤 감지를 계속하도록 false 유지
+    triggerOnce: false, 
   });
 
   const scrollRef = useRef(null);
