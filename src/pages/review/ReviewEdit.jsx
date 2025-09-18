@@ -22,8 +22,8 @@ const ReviewEdit = () => {
   const [isDataLoaded, setIsDataLoaded] = useState(false);
   const { setPlcPenIdType, setPensionId, setPlaceId } = useTypeStore();
   const scrollRef = useRef(null);
-  const [textLength, setTextLength] = useState(0); // 글자 수 상태 추가
-  const maxLength = 400; // 최대 글자 수
+  const [textLength, setTextLength] = useState(0);
+  const maxLength = 400; 
 
   const handleWheel = (e) => {
     e.preventDefault();
@@ -203,7 +203,7 @@ const ReviewEdit = () => {
     const currentText = e.target.value;
     if (currentText.length <= maxLength) {
       setContent(currentText);
-      setTextLength(currentText.length); // 글자 수 업데이트
+      setTextLength(currentText.length);
     } else {
       Swal.fire({
         title: 'Oops...',
