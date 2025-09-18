@@ -22,8 +22,8 @@ const ReviewAdd = () => {
   const [memberId, setMemberId] = useState(null);
   const scrollRef = useRef(null);
 
-  const [textLength, setTextLength] = useState(0); // 글자 수 상태 추가
-  const maxLength = 400; // 최대 글자 수
+  const [textLength, setTextLength] = useState(0);
+  const maxLength = 400; 
 
   useEffect(() => {
     const id = localStorage.getItem('MEMBER_ID');
@@ -79,10 +79,7 @@ const ReviewAdd = () => {
           file.type.startsWith('video/')
         ) {
           const fileExtension = file.name.substring(file.name.lastIndexOf('.'));
-          // const filePath = `Review/${plcPenType}/${pensionId}_${memberId}_review${file.name}${fileExtension}`;
           const filePath = `Review/${plcPenType}/${pensionId}_${memberId}_review${index}${fileExtension}`;
-          //"Review/Pension/plcpenid_memberId_review0.jpeg"
-          //"Review/Place/plcpenid_memberId_review0.mp4"
           filePaths.push(filePath);
           return {
             file,
@@ -125,12 +122,9 @@ const ReviewAdd = () => {
     };
     try {
       const response = await PostPresignedUrls(reviewData);
-      // console.log('[Step 2] Presigned URL 응답:', response.data);
-
       const filesToUpload = selectedFiles.map((item) => item.file);
       const presignedUrls = response.data;
       await handleFileUpload(filesToUpload, presignedUrls);
-      // console.log('[Step 3] 파일 업로드 완료!');
     } catch (error) {
       console.error('[Error] Presigned URL 요청 중 오류 발생:', error);
     }
@@ -175,9 +169,6 @@ const ReviewAdd = () => {
       visitDate,
       fileUrls: presignedUrls01,
     };
-    // console.log('reviewSubmit전송 데이터:', reviewData);
-    // console.log('presignedUrls01:', presignedUrls01);
-
     try {
       const response = await PostPensionsReview(reviewData);
     } catch (error) {
@@ -189,7 +180,7 @@ const ReviewAdd = () => {
     const currentText = e.target.value;
     if (currentText.length <= maxLength) {
       setContent(currentText);
-      setTextLength(currentText.length); // 글자 수 업데이트
+      setTextLength(currentText.length);
     } else {
       Swal.fire({
         title: 'Oops...',
