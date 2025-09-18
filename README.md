@@ -2,7 +2,6 @@
 ![프로젝트 화면 (2)](https://github.com/user-attachments/assets/3693024a-bc43-4b44-acb9-a7f68e7114ea)
 <br/>
 
-
 <br><br>
 
 ## 📋 프로젝트 소개
@@ -82,6 +81,7 @@ LG U+ 유레카 1기 최종 융합 프로젝트 우수상 수상 <br/><br/>
 - 반려동물 프로필 관리 (CRUD) <br>
   <img src="https://github.com/user-attachments/assets/58c1bae1-030b-4914-8f18-671dc7c3ce1e" width="300">
   <img src="https://github.com/user-attachments/assets/9b99baec-89a1-4fbf-8aa6-c0ba26ed1210" width="300">
+  ![멍티비티 모션](https://github.com/user-attachments/assets/3988bb47-12e5-4772-9dbf-bd71c1d58379)
 <br>
 
 **3. 후기**
@@ -90,9 +90,12 @@ LG U+ 유레카 1기 최종 융합 프로젝트 우수상 수상 <br/><br/>
   
   <img src="https://github.com/user-attachments/assets/0fbcbd6f-c071-43fc-9153-798fae13bdb7" width="500">
   <img src="https://github.com/user-attachments/assets/98ad9968-101d-45ea-b40c-a23eadaebe6f" width="500">
+![멍티비티 이미지로딩](https://github.com/user-attachments/assets/3f4fcd54-614c-4683-9129-c65783fe4071)
+![멍티비티 이미지 업로드](https://github.com/user-attachments/assets/ecaec004-a0c0-44aa-828e-cbd4d380c577)
 
 <br>
 <br>
+
 
 ### 개요
 ## 주요 기능
