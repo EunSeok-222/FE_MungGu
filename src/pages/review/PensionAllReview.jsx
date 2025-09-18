@@ -35,7 +35,6 @@ const PensionAllReview = () => {
         const response = await GetPensionsReviews(pensionId, pageToFetch);
         setReviews((prevReviews) => [...prevReviews, ...response.reviews]);
         setHasNext(response.hasNext);
-        // console.log('fetchPlaceReviews response: ', response);
       } catch (error) {
         console.error('시설 리뷰 가져오기 실패 :', error);
       } finally {
